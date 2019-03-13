@@ -1,0 +1,44 @@
+$blk: #000;
+$bg: #fff;
+
+body,
+html{
+  color: $blk;
+  background-color: $bg;
+}
+
+#container{
+  padding: 50px;
+  background-color: #fff;
+}
+
+@mixin base-colorArea{
+  padding: 10px;
+  font-size: 16px;
+}
+
+.colorSquare{
+  box-shadow: 0px 0px 25px 0px #333;
+  width: 242px;
+  height: 242px;
+  margin-bottom: 15px;
+}
+
+.colorArea input{
+  @include base-colorArea;
+  border-radius: 2px solid #999;
+}
+
+.colorArea button{
+  @include base-colorArea;
+  margin: 10px;
+  background-color: #666;
+  color: #fff;
+  border: 2px solid #666;
+}
+
+.colorArea button:hover{
+  background-color: #111;
+  border-color: #111;
+  cursor: pointer;
+}
